@@ -1,6 +1,7 @@
 body {
   background-color: black;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -22,9 +23,9 @@ a {
   color: white;
 }
 
-li > a {
-    text-decoration: none;
-    color: white;
+li>a {
+  text-decoration: none;
+  color: white;
 }
 
 ul,
@@ -43,4 +44,22 @@ p,
 div {
   margin: 0px;
   padding: 0px;
+}
+
+.logo {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+  z-index: 2;
+}
+
+.card {
+  background-color: black !important;
+  color: white !important;
+}
+
+.mynavbar>li>a {
+  color: white !important;
 }
