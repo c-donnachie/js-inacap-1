@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+    color: white !important;
+}
+
+
+.subContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-around;
+    background: black;
+    gap: 10rem;
+}
+
+.section1 {
+    width: 40%;
+}
+
+.section1>h1 {
+    font-size: 4rem;
+}
+
+.section1>p {
+    font-size: 1.2rem;
+}
+
+.section2 {
+    width: 40%;
+}
+
+.section2_rows {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.inputs>div>input {
+    background-color: transparent;
+    color: rgb(121, 121, 121);
+}
+
+.inputs>div>input::placeholder {
+    color: rgb(121, 121, 121);
+}
+
+.inputs>div>input:hover {
+    background-color: transparent !important;
+}
+
+.inputs>div>input:focus {
+    background-color: transparent !important;
+    color: rgb(121, 121, 121);
+    
+}

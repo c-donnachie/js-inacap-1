@@ -1,91 +1,166 @@
-.video-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
+#body {
+    cursor: url('../public/cursor.png'), auto;
+}
+.video_container {
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), black);
 }
 
-.video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.video_container video {
+    opacity: 0.7;
+}
+
+.content {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    color: white;
+    text-align: center;
+}
+
+.content_desc {
+    font-size: 1.5rem;
+    padding: 10rem 15rem 20rem 60rem;
+}
+
+.content_title {
+    font-size: 3rem;
+    padding: 40rem 35rem 0rem 45rem;
+}
+
+.content_menu_title {
+    font-size: 3rem;
+    padding: 40rem 35rem 0rem 45rem;
+}
+
+.vhContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.vhContainer .menu_title {
+    position: absolute;
+    font-size: 4rem;
+    bottom: 20rem;
+    left: 25rem;
+}
+
+
+.vhContainer .menu_desc1 {
+    position: absolute;
+    font-size: 1.2rem;
+    bottom: 20rem;
+    right: 32rem;
+}
+
+.vhContainer .menu_image {
+    width: 24rem;
+    height: 32rem;
+    object-fit: cover;
+    position: absolute;
+    z-index: 10;
+    bottom: 4rem;
+    right: 6rem;
+}
+
+.content_menu_desc1 {
+    font-size: 1.5rem;
+    padding: 10rem 15rem 20rem 60rem;
 }
 
 .header {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-  top: 0px;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  position: fixed;
-  z-index: 2;
-  backdrop-filter: blur(5px);
-  background-color: rgba(7, 7, 7, 0.293) !important;
+    margin-top: 20rem;
+    z-index: 100;
+    position: absolute;
+}
+
+.mynavbar {
+    display: flex;
+    margin-left: 1rem;
+}
+
+.mynavbar>ul {
+    flex-direction: column;
+    display: flex;
+}
+
+.mynavbar>ul>li {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.106);
+    border-radius: 12px;
+    margin-top: 0.5rem;
+    border: solid 1px transparent;
+    transition: border 1s ease;
+}
+
+.mynavbar>ul>li:hover {
+    background-color: transparent;
+    border-color: white;
+}
+
+.mynavbar>ul>li>a {
+    padding: 0.4rem 2.3rem 0.4rem;
+    display: flex;
+    text-align: left;
+}
+
+.logo {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+    z-index: 2;
+}
+
+.background {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease;
+}
+
+.mostrar {
+    animation: fade-out 0.5s forwards;
+    display: block;
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 0;
+        transform: rotate(10deg) translateX(180px);;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.menu {
+    display: block;
+}
+
+.menu-hiden {
+    display: none;
+}
+
+.uberMenu {
+    display: none;
 
 }
 
-.section1 {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  height: 30vh;
-}
-
-.section1-subtitle {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.section2 {
-  background-color: #000;
-  color: white;
-  padding: 10rem;
-}
-
-.section2-first {
-  flex-direction: column;
-  display: flex;
-}
-
-.section2-title {
-  display: flex;
-}
-
-.section2 p {
-  font-size: 2.5rem;
-}
-
-.section3-image {
-  width: 100%;
-  object-fit: cover;
-}
-
-.section3-video {
-  width: 100%;
-  object-fit: cover;
-}
-
-.section4 {
-  background-color: #000;
-  color: white;
-  padding: 10rem;
-}
-
-.carousel-center {
-  margin-left: 300px;
-  margin-right: 300px;
-}
-
-.carousel-test {
-  padding-left: 550px;
-  aspect-ratio: 16 / 9;
+.uberMenu-show {
+    color: white;
+    display: block;
+    position: absolute;
+    z-index: 2;
 }

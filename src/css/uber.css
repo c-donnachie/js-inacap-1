@@ -1,0 +1,136 @@
+body {
+  background-color: #000;
+}
+.video-container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), black);
+}
+
+.content {
+  position: absolute;
+  z-index: 10;
+  color: white;
+  text-align: center;
+}
+
+.content_desc {
+  font-size: 1.5rem;
+  padding: 10rem 35rem 20rem 45rem;
+
+}
+
+.content_title {
+  font-size: 2rem;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mainContainer {
+  background: black;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  top: 0px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  position: fixed;
+  z-index: 2;
+  backdrop-filter: blur(5px);
+  background-color: rgba(7, 7, 7, 0.293) !important;
+
+}
+
+.section1 {
+  background-color: #000;
+  padding-top: 8.5rem;
+  color: #fff;
+  text-align: center;
+  height: 30vh;
+}
+
+.section1-subtitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.section2 {
+  background-color: black;
+  color: white;
+  padding: 10rem;
+}
+
+.section2_first {
+  flex-direction: column;
+  display: flex;
+}
+
+.section2_title {
+  display: flex;
+}
+
+.section2 p {
+  font-size: 2.5rem;
+}
+
+.section3 {
+  background-color: black;
+}
+
+.section3-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.section3-video {
+  width: 100%;
+  object-fit: cover;
+}
+
+.section4 {
+  background-color: #000;
+  color: white;
+  padding: 10rem;
+}
+
+.carousel-center {
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.carousel-test {
+  padding-left: 550px;
+  aspect-ratio: 16 / 9;
+}
+
+.firstScreen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  margin-top: 300px;
+  background-color: transparent;
+  padding-left: 2rem;
+}
+
+.firstScreen p {
+  width: 30rem;
+  color: white;
+  font-size: 2rem;
+}
