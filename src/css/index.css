@@ -3,6 +3,7 @@
     auto; */
     cursor: crosshair;
 }
+
 .video_container {
     display: block;
     top: 0;
@@ -27,12 +28,12 @@
 }
 
 .content_desc {
-    font-size: 1.5rem;
-    padding: 10rem 15rem 20rem 60rem;
+    font-size: 1.3rem;
+    padding: 16rem 15rem 20rem 60rem;
 }
 
 .content_title {
-    font-size: 3rem;
+    font-size: 3.1rem;
     padding: 40rem 35rem 0rem 45rem;
 }
 
@@ -72,8 +73,8 @@
 }
 
 .content_menu_desc1 {
-    font-size: 1.5rem;
-    padding: 10rem 15rem 20rem 60rem;
+    font-size: 1.1rem;
+    padding: 10rem 35rem 20rem 42rem;
 }
 
 .header {
@@ -131,8 +132,10 @@
 @keyframes fade-out {
     from {
         opacity: 0;
-        transform: rotate(10deg) translateX(180px);;
+        transform: rotate(10deg) translateX(180px);
+        ;
     }
+
     to {
         opacity: 1;
     }
@@ -156,4 +159,18 @@
     display: block;
     position: absolute;
     z-index: 2;
+    animation: show 0.8s forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translate3d(1.7rem, 1rem, 1rem);
+
+    }
+
+    to {
+        transform: translate3d(0rem, 0rem, 0rem);
+        opacity: 1;
+    }
 }

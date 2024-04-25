@@ -64,6 +64,7 @@ body {
 
 .video {
     width: 12rem;
+    aspect-ratio: 16 / 9;
 }
 
 .button {
@@ -77,7 +78,7 @@ body {
    backdrop-filter: blur(10px);
 }
 
-.header {
+#header {
     display: flex;
     align-items: center;
     width: 100%;
@@ -88,6 +89,19 @@ body {
     z-index: 2;
     backdrop-filter: blur(5px);
     background-color: rgba(7, 7, 7, 0.293) !important;
+  }
+  
+  .mynavbar2 {
+    display: flex;
+    margin-left: 1rem;
+  }
+  
+  .mynavbar2>li>a {
+    color: white !important;
+  }
+  
+  .mynavbar2>li>a:hover {
+    color: rgb(176, 176, 176) !important;
   }
   
   .logo2 {

@@ -63,3 +63,63 @@ div {
 .mynavbar>li>a {
   color: white !important;
 }
+
+@keyframes show {
+  from {
+      opacity: 0;
+      scale: 25%;
+  }
+
+  to {
+      opacity: 1;
+      scale: 100%;
+  }   
+}
+
+.show {
+  width: 80%;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}
+
+@keyframes show2 {
+  from {
+      opacity: 0;
+      padding-right: 500px;
+  }
+
+  to {
+      opacity: 1;
+      padding-right: 0px;
+  }   
+}
+
+.show2 {
+  width: 80%;
+  view-timeline-name: --text;
+  view-timeline-axis: block;
+
+  animation-timeline: --text;
+  animation-name: show2;
+
+  animation-range: entry 50% cover 65%;
+  animation-fill-mode: both;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  height: 6rem;
+}
+
+footer>p>span{
+  color: rgb(142, 142, 142)
+}

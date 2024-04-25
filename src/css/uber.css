@@ -39,7 +39,7 @@ body {
   background: black;
 }
 
-.header {
+#header {
   display: flex;
   align-items: center;
   width: 100%;
@@ -50,6 +50,19 @@ body {
   z-index: 2;
   backdrop-filter: blur(5px);
   background-color: rgba(7, 7, 7, 0.293) !important;
+}
+
+.mynavbar2 {
+  display: flex;
+  margin-left: 1rem;
+}
+
+.mynavbar2>li>a {
+  color: white !important;
+}
+
+.mynavbar2>li>a:hover {
+  color: rgb(176, 176, 176) !important;
 }
 
 .logo2 {
@@ -115,6 +128,18 @@ body {
   padding: 10rem;
 }
 
+.section4>div>h4>span {
+  font-size: 4rem;
+}
+.section4>div>p>span {
+  font-size: 1.5rem;
+}
+
+.section5 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .carousel-center {
   margin-left: 300px;
   margin-right: 300px;
@@ -139,4 +164,53 @@ body {
   width: 30rem;
   color: white;
   font-size: 2rem;
+}
+
+/* Scroll Reveal */
+
+.scroll_reveal {
+  text-align: center;
+  padding-block: clamp(0.1rem, 25vh, 2rem);
+}
+
+.scroll_reveal h3 {
+  font-size: 5rem;
+  line-height: 1;
+}
+
+.scroll_reveal p {
+  font-size: 1.75rem;
+  line-height: 1.3;
+  min-width: 55ch;
+  margin-inline: auto;
+}
+
+.scroll_reveal>* {
+  margin: 0;
+}
+
+.scroll_reveal span {
+  color: hsl(0 0% 100% / 0.2);
+  background-clip: text;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-image: linear-gradient(90deg, white, white);
+  animation: scroll-reaveal linear forwards;
+  animation-timeline: view(y);
+}
+
+.scroll_reveal h3 span {
+  animation-range-start: cover 40vh;
+  animation-range-end: cover 45vh;
+}
+
+.scroll_reveal p span {
+  animation-range-start: cover 40vh;
+  animation-range-end: cover 60vh;
+}
+
+@keyframes scroll-reaveal {
+  to {
+    background-size: 100% 100%;
+  }
 }
