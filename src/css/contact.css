@@ -48,6 +48,12 @@ body {
     color: rgb(121, 121, 121);
 }
 
+.inputs>div>textarea {
+    backdrop-filter: blur(10px);
+    background-color: rgba(18, 18, 18, 0.049);
+    color: rgb(121, 121, 121);
+}
+
 .inputs>div>input::placeholder {
     color: rgb(121, 121, 121);
 }
@@ -59,7 +65,11 @@ body {
 .inputs>div>input:focus {
     background-color: transparent !important;
     color: rgb(121, 121, 121);
-    
+}
+
+.inputs>div>textarea:focus {
+    background-color: transparent !important;
+    color: rgb(121, 121, 121);
 }
 
 .video {
@@ -68,14 +78,24 @@ body {
 }
 
 .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
     height: 3rem;
     width: 8rem;
     background-color: white;
+    border: solid 1px transparent;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.4s ease-out;
 }
 
 .button:hover {
-   background-color: rgba(255, 255, 255, 0.328);
-   backdrop-filter: blur(10px);
+    background-color: black;
+    color: white;
+    border-color: white;
 }
 
 #header {
@@ -89,25 +109,25 @@ body {
     z-index: 2;
     backdrop-filter: blur(5px);
     background-color: rgba(7, 7, 7, 0.293) !important;
-  }
-  
-  .mynavbar2 {
+}
+
+.mynavbar2 {
     display: flex;
     margin-left: 1rem;
-  }
-  
-  .mynavbar2>li>a {
+}
+
+.mynavbar2>li>a {
     color: white !important;
-  }
-  
-  .mynavbar2>li>a:hover {
+}
+
+.mynavbar2>li>a:hover {
     color: rgb(176, 176, 176) !important;
-  }
-  
-  .logo2 {
+}
+
+.logo2 {
     display: flex;
     position: absolute;
     top: 0.7rem;
     left: 50%;
     transform: translateX(-50%);
-  }
+}

@@ -3,13 +3,11 @@ function mostrarFondo() {
     fondo.classList.add("mostrar");
 
     var menuUber = document.querySelectorAll(".uberMenu");
-
     menuUber.forEach(function (uberMenu) {
         uberMenu.classList.add("uberMenu-show");
     });
 
     var menu = document.querySelectorAll(".menu");
-
     menu.forEach(function (menu) {
         menu.classList.add("menu-hiden");
     });
